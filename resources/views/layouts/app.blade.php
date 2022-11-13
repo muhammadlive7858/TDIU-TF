@@ -10,9 +10,7 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>Dashboard - Analytics |
-        Sneat -
-        Bootstrap 5 HTML Admin Template - Pro</title>
+    <title>Training School - Pro</title>
     <meta name="description"
         content="Most Powerful &amp; Comprehensive Bootstrap 5 HTML Admin Dashboard Template built for developers!" />
     <meta name="keywords" content="dashboard, bootstrap 5 dashboard, bootstrap 5 design, bootstrap 5">
@@ -32,26 +30,25 @@
         href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="demo/assets/vendor/fonts/boxicons.css@id=87122b3a3900320673311cebdeb618da" />
-    <link rel="stylesheet" href="demo/assets/vendor/fonts/fontawesome.css@id=cfafea31c584abe0bcf920c389ea9b3f" />
-    <link rel="stylesheet" href="demo/assets/vendor/fonts/flag-icons.css@id=403b97c176f3cdf56a3cbf09107ee240" />
+    <link rel="stylesheet" href="{{ asset('demo/assets/vendor/fonts/boxicons.css@id=87122b3a3900320673311cebdeb618da')}}" />
+    <link rel="stylesheet" href="{{ asset('demo/assets/vendor/fonts/fontawesome.css@id=cfafea31c584abe0bcf920c389ea9b3f')}}" />
+    <link rel="stylesheet" href="{{ asset('demo/assets/vendor/fonts/flag-icons.css@id=403b97c176f3cdf56a3cbf09107ee240')}}" />
 
     <!-- Core CSS -->
-    <link rel="stylesheet" href="demo/assets/vendor/css/rtl/core-dark.css@id=863bbf103551fe7d6276dae1217b30a0"
+    <link rel="stylesheet" href="{{ asset('demo/assets/vendor/css/rtl/core-dark.css@id=863bbf103551fe7d6276dae1217b30a0')}}"
         class="template-customizer-core-css" />
-    <link rel="stylesheet"
-        href="demo/assets/vendor/css/rtl/theme-default-dark.css@id=3730ac5543e6e20fb4568c3c58d6109b"
+    <link rel="stylesheet" href="{{ asset('demo/assets/vendor/css/rtl/theme-default-dark.css@id=3730ac5543e6e20fb4568c3c58d6109b')}}"
         class="template-customizer-theme-css" />
-    <link rel="stylesheet" href="demo/assets/css/demo.css@id=8a804dae81f41c0f9fcbef2fa8316bdd" />
+    <link rel="stylesheet" href="{{ asset('demo/assets/css/demo.css@id=8a804dae81f41c0f9fcbef2fa8316bdd')}}" />
 
 
     <link rel="stylesheet"
-        href="demo/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css@id=d9fa6469688548dca3b7e6bd32cb0dc6" />
+        href="{{ asset('demo/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css@id=d9fa6469688548dca3b7e6bd32cb0dc6')}}" />
     <link rel="stylesheet"
-        href="demo/assets/vendor/libs/typeahead-js/typeahead.css@id=8fc311b79b2aeabf94b343b6337656cf" />
+        href="{{ asset('demo/assets/vendor/libs/typeahead-js/typeahead.css@id=8fc311b79b2aeabf94b343b6337656cf')}}" />
 
     <!-- Vendor Styles -->
-    <link rel="stylesheet" href="demo/assets/vendor/libs/apex-charts/apex-charts.css">
+    <link rel="stylesheet" href="{{ asset('demo/assets/vendor/libs/apex-charts/apex-charts.css')}}">
 
 
     <!-- Page Styles -->
@@ -191,54 +188,54 @@
 
 
                         <ul class="menu-sub">
-
-
-
                             <li class="menu-item active">
-                                <a href="../../demo-4.2" class="menu-link">
-                                    <div>Analytics</div>
+                                <a href="{{ route('mentor.index') }}" class="menu-link">
+                                    <div>Hamma mentorlar</div>
                                 </a>
-
-
                             </li>
-
-
-
                             <li class="menu-item ">
-                                <a href="../lang/pt" class="menu-link">
-                                    <div>CRM</div>
+                                <a href="{{ route('mentor.create') }}" class="menu-link">
+                                    <div>Mentor yaratish</div>
                                 </a>
-
-
-                            </li>
-
-
-
-                            <li class="menu-item ">
-                                <a href="../dashboard/ecommerce" class="menu-link">
-                                    <div>comércio eletrônico</div>
-                                </a>
-
-
                             </li>
                         </ul>
                     </li>
-
-
-
-
-
-
-
-
+                    <li class="menu-item active open">
+                        <a href="javascript:void(0);" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                            <div>Student</div>
+                        </a>
+                        <ul class="menu-sub">
+                            <li class="menu-item active">
+                                <a href="{{ route('student.index') }}" class="menu-link">
+                                    <div>Hamma talabalar</div>
+                                </a>
+                            </li>
+                            {{-- <li class="menu-item ">
+                                <a href="{{ route('student.create') }}" class="menu-link">
+                                    <div>Talaba yaratish</div>
+                                </a>
+                            </li> --}}
+                        </ul>
+                    </li>
 
                     <li class="menu-item ">
-                        <a href="../app/calendar" class="menu-link">
+                        <a href="{{ route('course.index') }}" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-calendar"></i>
-                            <div>Calendário</div>
+                            <div>Course</div>
                         </a>
-
-
+                    </li>
+                    <li class="menu-item ">
+                        <a href="{{ route('group.index') }}" class="menu-link">
+                            <i class="menu-icon tf-icons bx bx-calendar"></i>
+                            <div>Group</div>
+                        </a>
+                    </li>
+                    <li class="menu-item ">
+                        <a href="{{ route('prise.index') }}" class="menu-link">
+                            <i class="menu-icon tf-icons bx bx-calendar"></i>
+                            <div>Prises</div>
+                        </a>
                     </li>
                 </ul>
 
@@ -283,27 +280,9 @@
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end">
                                     <li>
-                                        <a class="dropdown-item" href="../lang/en" data-language="en">
+                                        <a class="dropdown-item" href="#" data-language="en">
                                             <i class="fi fi-us fis rounded-circle fs-4 me-1"></i>
                                             <span class="align-middle">English</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="../lang/fr" data-language="fr">
-                                            <i class="fi fi-fr fis rounded-circle fs-4 me-1"></i>
-                                            <span class="align-middle">French</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="../lang/de" data-language="de">
-                                            <i class="fi fi-de fis rounded-circle fs-4 me-1"></i>
-                                            <span class="align-middle">German</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="../lang/pt" data-language="pt">
-                                            <i class="fi fi-pt fis rounded-circle fs-4 me-1"></i>
-                                            <span class="align-middle">Portuguese</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -672,7 +651,7 @@
                                 <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);"
                                     data-bs-toggle="dropdown">
                                     <div class="avatar avatar-online">
-                                        <img src="../../demo/assets/img/avatars/1.png" alt
+                                        <img src="{{    asset('demo/assets/img/avatars/1.png') }}" alt
                                             class="w-px-40 h-auto rounded-circle">
                                     </div>
                                 </a>
@@ -682,13 +661,13 @@
                                             <div class="d-flex">
                                                 <div class="flex-shrink-0 me-3">
                                                     <div class="avatar avatar-online">
-                                                        <img src="../../demo/assets/img/avatars/1.png" alt
+                                                        <img src="{{ asset('demo/assets/img/avatars/1.png') }}" alt
                                                             class="w-px-40 h-auto rounded-circle">
                                                     </div>
                                                 </div>
                                                 <div class="flex-grow-1">
                                                     <span class="fw-semibold d-block">
-                                                        John Doe
+                                                        {{ Auth::user()->name }}
                                                     </span>
                                                     <small class="text-muted">Admin</small>
                                                 </div>
@@ -707,17 +686,21 @@
                                     <li>
                                         <a class="dropdown-item" href="../app/invoice/list">
                                             <i class="bx bx-credit-card me-2"></i>
-                                            <span class="align-middle">Billing</span>
+                                            <span class="align-middle">{{ Auth::user()->role }}</span>
                                         </a>
                                     </li>
                                     <li>
                                         <div class="dropdown-divider"></div>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="javascript:void(0)">
-                                            <i class='bx bx-log-in me-2'></i>
-                                            <span class="align-middle">Login</span>
-                                        </a>
+                                        <form action="{{ route('logout') }}" method="post">
+                                        @csrf
+                                        @method('post')
+                                            <button class="dropdown-item" href="javascript:void(0)">
+                                                <i class='bx bx-log-in me-2'></i>
+                                                <span class="align-middle">Login</span>
+                                            </button>
+                                        </form>
                                     </li>
                                 </ul>
                             </li>
@@ -738,28 +721,28 @@
 
 
                 <!-- Content wrapper -->
-                {{-- <div class="content-wrapper"> --}}
+                <div class="container">
                     @yield('content')
                     <!-- Content -->
-
-                    <!-- / Content -->
-
-                    <!-- Footer -->
-                    <!-- Footer-->
-
-                    <!--/ Footer-->
-                    <!-- / Footer -->
-                    <div class="content-backdrop fade"></div>
                 </div>
-                <!--/ Content wrapper -->
-            </div>
-            <!-- / Layout page -->
-        </div>
+                <!-- / Content -->
 
-        <!-- Overlay -->
-        <div class="layout-overlay layout-menu-toggle"></div>
-        <!-- Drag Target Area To SlideIn Menu On Small Screens -->
-        <div class="drag-target"></div>
+                <!-- Footer -->
+                <!-- Footer-->
+
+                <!--/ Footer-->
+                <!-- / Footer -->
+                <div class="content-backdrop fade"></div>
+            </div>
+            <!--/ Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+    </div>
+
+    <!-- Overlay -->
+    <div class="layout-overlay layout-menu-toggle"></div>
+    <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+    <div class="drag-target"></div>
     </div>
     <!-- / Layout wrapper -->
     <!--/ Layout Content -->
@@ -768,25 +751,25 @@
 
     <!-- Include Scripts -->
     <!-- BEGIN: Vendor JS-->
-    <script src="demo/assets/vendor/libs/jquery/jquery.js@id=b49db52ac0f1a7a5d75b32b6326b285f"></script>
-    <script src="demo/assets/vendor/libs/popper/popper.js@id=1f8255bd80f17f73ba33c2d1210e5763"></script>
-    <script src="demo/assets/vendor/js/bootstrap.js@id=e310c0547362e972fb0e431ca7b5f438"></script>
-    <script src="demo/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js@id=9d86308b7c41e76a7dc8472907865b83">
+    <script src="{{  asset('demo/assets/vendor/libs/jquery/jquery.js@id=b49db52ac0f1a7a5d75b32b6326b285f')}}"></script>
+    <script src="{{ asset('demo/assets/vendor/libs/popper/popper.js@id=1f8255bd80f17f73ba33c2d1210e5763')}}"></script>
+    <script src="{{ asset('demo/assets/vendor/js/bootstrap.js@id=e310c0547362e972fb0e431ca7b5f438')}}"></script>
+    <script src="{{ asset('demo/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js@id=9d86308b7c41e76a7dc8472907865b83')}}">
     </script>
-    <script src="demo/assets/vendor/libs/hammer/hammer.js@id=2a80ebd1aa77a9e33ec54b68ee8de5e0"></script>
-    <script src="demo/assets/vendor/libs/i18n/i18n.js@id=8552a7b6c4b850c1768e5ed4409f1b97"></script>
-    <script src="demo/assets/vendor/libs/typeahead-js/typeahead.js@id=8c315d7e2e7b09a04d8e8efead923241"></script>
-    <script src="demo/assets/vendor/js/menu.js@id=f45ec38086f86335b91fc2fdcaaadab8"></script>
-    <script src="demo/assets/vendor/libs/apex-charts/apexcharts.js"></script>
+    <script src="{{ asset('demo/assets/vendor/libs/hammer/hammer.js@id=2a80ebd1aa77a9e33ec54b68ee8de5e0')}}"></script>
+    <script src="{{ asset('demo/assets/vendor/libs/i18n/i18n.js@id=8552a7b6c4b850c1768e5ed4409f1b97')}}"></script>
+    <script src="{{ asset('demo/assets/vendor/libs/typeahead-js/typeahead.js@id=8c315d7e2e7b09a04d8e8efead923241')}}"></script>
+    <script src="{{ asset('demo/assets/vendor/js/menu.js@id=f45ec38086f86335b91fc2fdcaaadab8')}}"></script>
+    <script src="{{ asset('demo/assets/vendor/libs/apex-charts/apexcharts.js')}}"></script>
     <!-- END: Page Vendor JS-->
     <!-- BEGIN: Theme JS-->
-    <script src="demo/assets/js/main.js@id=3c628e87a9befaa350e1f822744b8142"></script>
+    <script src="{{ asset('demo/assets/js/main.js@id=3c628e87a9befaa350e1f822744b8142')}}"></script>
 
     <!-- END: Theme JS-->
     <!-- Pricing Modal JS-->
     <!-- END: Pricing Modal JS-->
     <!-- BEGIN: Page JS-->
-    <script src="demo/assets/js/dashboards-analytics.js"></script>
+    <script src="{{ asset('demo/assets/js/dashboards-analytics.js')}}"></script>
     <!-- END: Page JS-->
 
 </body>

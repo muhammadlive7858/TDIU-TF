@@ -27,6 +27,7 @@ class User extends Authenticatable
         'role',
         'role_id'
     ];
+    protected $guarded = [];
 
     /**
      * The attributes that should be hidden for serialization.

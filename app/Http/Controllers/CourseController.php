@@ -14,8 +14,8 @@ class CourseController extends Controller
      */
     public function index()
     {
-        $course = course::all();
-        return view('course.index',compact('course'));
+        $courses = course::all();
+        return view('course.index',compact('courses'));
     }
 
     /**
@@ -36,7 +36,15 @@ class CourseController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $store = course::create($request->input());
+        if($store)
+        {
+        return response()->json(['success' => true,'message' => 'Student added successfully']);
+        }
+        else
+        {
+        return response()->json(['success' => false,'message' => 'Student not added']);
+        }
     }
 
     /**
@@ -58,8 +66,9 @@ class CourseController extends Controller
      */
     public function edit(course $course)
     {
-        $course = course::find($course);
-        return view('course.edit',compact('course'));
+        $courses = course::all();
+        $courseEdit = course::find($course)->first();
+        return view('course.index',compact('courses','courseEdit'));
     }
 
     /**
@@ -71,7 +80,19 @@ class CourseController extends Controller
      */
     public function update(Request $request, course $course)
     {
-        //
+        $course = course::find($course)->first();
+        if($course){
+            $update = $course->update($request->input());
+            if($update){
+                return response()->json(['success' => true,'message' => 'Student updated successfully']);
+            }
+            else{
+                return response()->json(['success' => false,'message' => 'Student not updated']);
+            }
+        }
+        else{
+            return response()->json(['success' => false,'message' => 'Student not found']);
+        }
     }
 
     /**
@@ -82,6 +103,18 @@ class CourseController extends Controller
      */
     public function destroy(course $course)
     {
-        //
+        $course = course::find($course)->first();
+        if($course){
+            $delete = $course->delete();
+            if($delete){
+                return response()->json(['success' => true,'message' => 'Course delete successfully']);
+            }
+            else{
+                return response()->json(['success' => false,'message' => 'Course not delete']);
+            }
+        }
+        else{
+            return response()->json(['success' => false,'message' => 'Course not found']);
+        }
     }
 }

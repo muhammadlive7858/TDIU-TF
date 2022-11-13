@@ -36,7 +36,13 @@ class GroupController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $store = group::create($request->input());
+        if($store){
+            return response()->json(['success' => true,'message' => 'Student updated successfully']);
+        }
+        else{
+            return response()->json(['success' => false,'message' => 'Student not updated']);
+        }
     }
 
     /**
@@ -58,8 +64,9 @@ class GroupController extends Controller
      */
     public function edit(group $group)
     {
-        $group = group::find($group);
-        return view('group.index',compact('group'));
+        $groups = group::all();
+        $groupEdit = group::find($group)->first();
+        return view('group.index',compact('groups','groupEdit'));
     }
 
     /**
@@ -71,7 +78,19 @@ class GroupController extends Controller
      */
     public function update(Request $request, group $group)
     {
-        //
+        $group = group::find($group)->first();
+        if($group){
+            $update = $group->update($request->input());
+            if($update){
+                return response()->json(['success' => true,'message' => 'Student updated successfully']);
+            }
+            else{
+                return response()->json(['success' => false,'message' => 'Student not updated']);
+            }
+        }
+        else{
+            return response()->json(['success' => false,'message' => 'Student not found']);
+        }
     }
 
     /**
@@ -82,6 +101,18 @@ class GroupController extends Controller
      */
     public function destroy(group $group)
     {
-        //
+        $group = group::find($group)->first();
+        if($group){
+            $update = $group->delete();
+            if($update){
+                return response()->json(['success' => true,'message' => 'Student updated successfully']);
+            }
+            else{
+                return response()->json(['success' => false,'message' => 'Student not updated']);
+            }
+        }
+        else{
+            return response()->json(['success' => false,'message' => 'Student not found']);
+        }
     }
 }

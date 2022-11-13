@@ -4,6 +4,8 @@ use App\Http\Controllers\CourseController;
 use App\Http\Controllers\GroupController;
 use App\Http\Controllers\MentorCantroller;
 use App\Http\Controllers\StudentController;
+use App\Http\Controllers\Prisescontroller;
+
 use Illuminate\Support\Facades\Route;
 use Symfony\Component\Routing\Router;
 
@@ -33,3 +35,6 @@ Route::resource('student',StudentController::class)->names('student');
 Route::resource('course',CourseController::class)->names('course');
 // group router
 Route::resource('group',GroupController::class)->names('group');
+// prises
+Route::resource('prise',Prisescontroller::class)->names('prise');
+
