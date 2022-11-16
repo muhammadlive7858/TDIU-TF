@@ -202,7 +202,7 @@
                     </li>
                     <li class="menu-item active open">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
-                            <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                            <i class="menu-icon tf-icons bx bx-plus"></i>
                             <div>Student</div>
                         </a>
                         <ul class="menu-sub">
@@ -221,20 +221,44 @@
 
                     <li class="menu-item ">
                         <a href="{{ route('course.index') }}" class="menu-link">
-                            <i class="menu-icon tf-icons bx bx-calendar"></i>
+                            <i class="menu-icon tf-icons bx bx-award"></i>
                             <div>Course</div>
                         </a>
                     </li>
                     <li class="menu-item ">
                         <a href="{{ route('group.index') }}" class="menu-link">
-                            <i class="menu-icon tf-icons bx bx-calendar"></i>
+                            <i class="menu-icon tf-icons bx bx-group"></i>
                             <div>Group</div>
                         </a>
                     </li>
                     <li class="menu-item ">
                         <a href="{{ route('prise.index') }}" class="menu-link">
-                            <i class="menu-icon tf-icons bx bx-calendar"></i>
+                            <i class="menu-icon tf-icons bx bx-star"></i>
                             <div>Prises</div>
+                        </a>
+                    </li>
+                    <li class="menu-item ">
+                        <a href="{{ route('dekanat.index') }}" class="menu-link">
+                            <i class="menu-icon tf-icons bx bx-book"></i>
+                            <div>Dekanat</div>
+                        </a>
+                    </li>
+                    <li class="menu-item ">
+                        <a href="{{ route('kafedra.index') }}" class="menu-link">
+                            <i class="menu-icon tf-icons bx bx-home"></i>
+                            <div>Kafedra</div>
+                        </a>
+                    </li>
+                    <li class="menu-item ">
+                        <a href="{{ route('nizom.index') }}" class="menu-link">
+                            <i class="menu-icon tf-icons bx bx-shield"></i>
+                            <div>NIzom</div>
+                        </a>
+                    </li>
+                    <li class="menu-item ">
+                        <a href="{{ route('qoida.index') }}" class="menu-link">
+                            <i class="menu-icon tf-icons bx bx-tag"></i>
+                            <div>Qoida</div>
                         </a>
                     </li>
                 </ul>

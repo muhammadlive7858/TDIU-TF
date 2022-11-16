@@ -6,6 +6,11 @@ use App\Http\Controllers\MentorCantroller;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\Prisescontroller;
 
+use App\Http\Controllers\DekanatController;
+use App\Http\Controllers\KafedraController;
+use App\Http\Controllers\NizomController;
+use App\Http\Controllers\QoidaController;
+
 use Illuminate\Support\Facades\Route;
 use Symfony\Component\Routing\Router;
 
@@ -37,4 +42,14 @@ Route::resource('course',CourseController::class)->names('course');
 Route::resource('group',GroupController::class)->names('group');
 // prises
 Route::resource('prise',Prisescontroller::class)->names('prise');
+// nizom
+Route::resource('nizom',NizomController::class)->names('nizom');
+// dekanat
+Route::resource('dekanat',DekanatController::class)->names('dekanat');
+// kafedra
+Route::resource('kafedra',KafedraController::class)->names('kafedra');
+// qoida
+Route::resource('qoida',QoidaController::class)->names('qoida');
+
+
 

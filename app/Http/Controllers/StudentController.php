@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StudentValidateRequest;
 use App\Models\student;
 use Illuminate\Http\Request;
 use App\Models\group;

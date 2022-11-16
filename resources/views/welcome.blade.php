@@ -1,132 +1,1313 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.layoutFrontend')
 
-        <title>Laravel</title>
+@section('content')
+    <div id="content" class="site-content">
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+        <div id="primary" class="content-area">
+            <main id="main-home" class="site-main">
 
-        <!-- Styles -->
-        <style>
-            /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}[hidden]{display:none}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}a{color:inherit;text-decoration:inherit}svg,video{display:block;vertical-align:middle}video{max-width:100%;height:auto}.bg-white{--bg-opacity:1;background-color:#fff;background-color:rgba(255,255,255,var(--bg-opacity))}.bg-gray-100{--bg-opacity:1;background-color:#f7fafc;background-color:rgba(247,250,252,var(--bg-opacity))}.border-gray-200{--border-opacity:1;border-color:#edf2f7;border-color:rgba(237,242,247,var(--border-opacity))}.border-t{border-top-width:1px}.flex{display:flex}.grid{display:grid}.hidden{display:none}.items-center{align-items:center}.justify-center{justify-content:center}.font-semibold{font-weight:600}.h-5{height:1.25rem}.h-8{height:2rem}.h-16{height:4rem}.text-sm{font-size:.875rem}.text-lg{font-size:1.125rem}.leading-7{line-height:1.75rem}.mx-auto{margin-left:auto;margin-right:auto}.ml-1{margin-left:.25rem}.mt-2{margin-top:.5rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mt-4{margin-top:1rem}.ml-4{margin-left:1rem}.mt-8{margin-top:2rem}.ml-12{margin-left:3rem}.-mt-px{margin-top:-1px}.max-w-6xl{max-width:72rem}.min-h-screen{min-height:100vh}.overflow-hidden{overflow:hidden}.p-6{padding:1.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.pt-8{padding-top:2rem}.fixed{position:fixed}.relative{position:relative}.top-0{top:0}.right-0{right:0}.shadow{box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)}.text-center{text-align:center}.text-gray-200{--text-opacity:1;color:#edf2f7;color:rgba(237,242,247,var(--text-opacity))}.text-gray-300{--text-opacity:1;color:#e2e8f0;color:rgba(226,232,240,var(--text-opacity))}.text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.text-gray-500{--text-opacity:1;color:#a0aec0;color:rgba(160,174,192,var(--text-opacity))}.text-gray-600{--text-opacity:1;color:#718096;color:rgba(113,128,150,var(--text-opacity))}.text-gray-700{--text-opacity:1;color:#4a5568;color:rgba(74,85,104,var(--text-opacity))}.text-gray-900{--text-opacity:1;color:#1a202c;color:rgba(26,32,44,var(--text-opacity))}.underline{text-decoration:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.w-5{width:1.25rem}.w-8{width:2rem}.w-auto{width:auto}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}@media (min-width:640px){.sm\:rounded-lg{border-radius:.5rem}.sm\:block{display:block}.sm\:items-center{align-items:center}.sm\:justify-start{justify-content:flex-start}.sm\:justify-between{justify-content:space-between}.sm\:h-20{height:5rem}.sm\:ml-0{margin-left:0}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:pt-0{padding-top:0}.sm\:text-left{text-align:left}.sm\:text-right{text-align:right}}@media (min-width:768px){.md\:border-t-0{border-top-width:0}.md\:border-l{border-left-width:1px}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}}@media (prefers-color-scheme:dark){.dark\:bg-gray-800{--bg-opacity:1;background-color:#2d3748;background-color:rgba(45,55,72,var(--bg-opacity))}.dark\:bg-gray-900{--bg-opacity:1;background-color:#1a202c;background-color:rgba(26,32,44,var(--bg-opacity))}.dark\:border-gray-700{--border-opacity:1;border-color:#4a5568;border-color:rgba(74,85,104,var(--border-opacity))}.dark\:text-white{--text-opacity:1;color:#fff;color:rgba(255,255,255,var(--text-opacity))}.dark\:text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.dark\:text-gray-500{--tw-text-opacity:1;color:#6b7280;color:rgba(107,114,128,var(--tw-text-opacity))}}
-        </style>
+                <div data-elementor-type="wp-page" data-elementor-id="12" class="elementor elementor-12"
+                    data-elementor-settings="[]">
+                    <div class="elementor-section-wrap">
+                        <section
+                            class="elementor-section elementor-top-section elementor-element elementor-element-78656ed elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                            data-id="78656ed" data-element_type="section">
+                            <div class="elementor-container elementor-column-gap-no">
+                                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0a38e5a"
+                                    data-id="0a38e5a" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-100404c elementor-widget elementor-widget-varsity-slider"
+                                            data-id="100404c" data-element_type="widget"
+                                            data-widget_type="varsity-slider.default">
+                                            <div class="elementor-widget-container">
+                                                <!-- slider part here -->
+                                                <section class="banner_part owl-carousel">
+                                                    <div class="single_banner_part bg_1"
+                                                        style="background-image: url(https://varsity.mhrtheme.com/wp-content/uploads/2021/09/banner.jpg) ">
+                                                        <div class="container">
+                                                            <div class="row justify-content-center align-items-center">
+                                                                <div class="col-lg-8">
+                                                                    <div class="banner_iner">
+                                                                        <h5>Welcome To Our TSUE University</h5>
+                                                                        <h2>Toshkent davlat iqtisodiyot universiteti</h2>
+                                                                        <a href="#"
+                                                                            class="btn_2">Biz haqimizda</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="single_banner_part bg_1"
+                                                        style="background-image: url(https://varsity.mhrtheme.com/wp-content/uploads/2021/09/banner_1.png) ">
+                                                        <div class="container">
+                                                            <div class="row justify-content-center align-items-center">
+                                                                <div class="col-lg-8">
+                                                                    <div class="banner_iner">
+                                                                        <h5>Welcome To Our TSUE University</h5>
+                                                                        <h2>Toshkent davlat iqtisodiyot universiteti</h2>
+                                                                        <a href="#"
+                                                                            class="btn_2">Biz haqimizda</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="single_banner_part bg_1"
+                                                        style="background-image: url(https://varsity.mhrtheme.com/wp-content/uploads/2021/09/banner_2.png) ">
+                                                        <div class="container">
+                                                            <div class="row justify-content-center align-items-center">
+                                                                <div class="col-lg-8">
+                                                                    <div class="banner_iner">
+                                                                        <h5>Welcome To Our TSUE University</h5>
+                                                                        <h2>Toshkent davlat iqtisodiyot universiteti</h2>
+                                                                        <a href="#"
+                                                                            class="btn_2">Biz haqimizda</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                                <!-- slider part end -->
 
-        <style>
-            body {
-                font-family: 'Nunito', sans-serif;
-            }
-        </style>
-    </head>
-    <body class="antialiased">
-        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-            @if (Route::has('login'))
-                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                    @auth
-                        <a href="{{ url('/home') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Home</a>
-                    @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
-            <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-                <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
-                    <svg viewBox="0 0 651 192" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-16 w-auto text-gray-700 sm:h-20">
-                        <g clip-path="url(#clip0)" fill="#EF3B2D">
-                            <path d="M248.032 44.676h-16.466v100.23h47.394v-14.748h-30.928V44.676zM337.091 87.202c-2.101-3.341-5.083-5.965-8.949-7.875-3.865-1.909-7.756-2.864-11.669-2.864-5.062 0-9.69.931-13.89 2.792-4.201 1.861-7.804 4.417-10.811 7.661-3.007 3.246-5.347 6.993-7.016 11.239-1.672 4.249-2.506 8.713-2.506 13.389 0 4.774.834 9.26 2.506 13.459 1.669 4.202 4.009 7.925 7.016 11.169 3.007 3.246 6.609 5.799 10.811 7.66 4.199 1.861 8.828 2.792 13.89 2.792 3.913 0 7.804-.955 11.669-2.863 3.866-1.908 6.849-4.533 8.949-7.875v9.021h15.607V78.182h-15.607v9.02zm-1.431 32.503c-.955 2.578-2.291 4.821-4.009 6.73-1.719 1.91-3.795 3.437-6.229 4.582-2.435 1.146-5.133 1.718-8.091 1.718-2.96 0-5.633-.572-8.019-1.718-2.387-1.146-4.438-2.672-6.156-4.582-1.719-1.909-3.032-4.152-3.938-6.73-.909-2.577-1.36-5.298-1.36-8.161 0-2.864.451-5.585 1.36-8.162.905-2.577 2.219-4.819 3.938-6.729 1.718-1.908 3.77-3.437 6.156-4.582 2.386-1.146 5.059-1.718 8.019-1.718 2.958 0 5.656.572 8.091 1.718 2.434 1.146 4.51 2.674 6.229 4.582 1.718 1.91 3.054 4.152 4.009 6.729.953 2.577 1.432 5.298 1.432 8.162-.001 2.863-.479 5.584-1.432 8.161zM463.954 87.202c-2.101-3.341-5.083-5.965-8.949-7.875-3.865-1.909-7.756-2.864-11.669-2.864-5.062 0-9.69.931-13.89 2.792-4.201 1.861-7.804 4.417-10.811 7.661-3.007 3.246-5.347 6.993-7.016 11.239-1.672 4.249-2.506 8.713-2.506 13.389 0 4.774.834 9.26 2.506 13.459 1.669 4.202 4.009 7.925 7.016 11.169 3.007 3.246 6.609 5.799 10.811 7.66 4.199 1.861 8.828 2.792 13.89 2.792 3.913 0 7.804-.955 11.669-2.863 3.866-1.908 6.849-4.533 8.949-7.875v9.021h15.607V78.182h-15.607v9.02zm-1.432 32.503c-.955 2.578-2.291 4.821-4.009 6.73-1.719 1.91-3.795 3.437-6.229 4.582-2.435 1.146-5.133 1.718-8.091 1.718-2.96 0-5.633-.572-8.019-1.718-2.387-1.146-4.438-2.672-6.156-4.582-1.719-1.909-3.032-4.152-3.938-6.73-.909-2.577-1.36-5.298-1.36-8.161 0-2.864.451-5.585 1.36-8.162.905-2.577 2.219-4.819 3.938-6.729 1.718-1.908 3.77-3.437 6.156-4.582 2.386-1.146 5.059-1.718 8.019-1.718 2.958 0 5.656.572 8.091 1.718 2.434 1.146 4.51 2.674 6.229 4.582 1.718 1.91 3.054 4.152 4.009 6.729.953 2.577 1.432 5.298 1.432 8.162 0 2.863-.479 5.584-1.432 8.161zM650.772 44.676h-15.606v100.23h15.606V44.676zM365.013 144.906h15.607V93.538h26.776V78.182h-42.383v66.724zM542.133 78.182l-19.616 51.096-19.616-51.096h-15.808l25.617 66.724h19.614l25.617-66.724h-15.808zM591.98 76.466c-19.112 0-34.239 15.706-34.239 35.079 0 21.416 14.641 35.079 36.239 35.079 12.088 0 19.806-4.622 29.234-14.688l-10.544-8.158c-.006.008-7.958 10.449-19.832 10.449-13.802 0-19.612-11.127-19.612-16.884h51.777c2.72-22.043-11.772-40.877-33.023-40.877zm-18.713 29.28c.12-1.284 1.917-16.884 18.589-16.884 16.671 0 18.697 15.598 18.813 16.884h-37.402zM184.068 43.892c-.024-.088-.073-.165-.104-.25-.058-.157-.108-.316-.191-.46-.056-.097-.137-.176-.203-.265-.087-.117-.161-.242-.265-.345-.085-.086-.194-.148-.29-.223-.109-.085-.206-.182-.327-.252l-.002-.001-.002-.002-35.648-20.524a2.971 2.971 0 00-2.964 0l-35.647 20.522-.002.002-.002.001c-.121.07-.219.167-.327.252-.096.075-.205.138-.29.223-.103.103-.178.228-.265.345-.066.089-.147.169-.203.265-.083.144-.133.304-.191.46-.031.085-.08.162-.104.25-.067.249-.103.51-.103.776v38.979l-29.706 17.103V24.493a3 3 0 00-.103-.776c-.024-.088-.073-.165-.104-.25-.058-.157-.108-.316-.191-.46-.056-.097-.137-.176-.203-.265-.087-.117-.161-.242-.265-.345-.085-.086-.194-.148-.29-.223-.109-.085-.206-.182-.327-.252l-.002-.001-.002-.002L40.098 1.396a2.971 2.971 0 00-2.964 0L1.487 21.919l-.002.002-.002.001c-.121.07-.219.167-.327.252-.096.075-.205.138-.29.223-.103.103-.178.228-.265.345-.066.089-.147.169-.203.265-.083.144-.133.304-.191.46-.031.085-.08.162-.104.25-.067.249-.103.51-.103.776v122.09c0 1.063.568 2.044 1.489 2.575l71.293 41.045c.156.089.324.143.49.202.078.028.15.074.23.095a2.98 2.98 0 001.524 0c.069-.018.132-.059.2-.083.176-.061.354-.119.519-.214l71.293-41.045a2.971 2.971 0 001.489-2.575v-38.979l34.158-19.666a2.971 2.971 0 001.489-2.575V44.666a3.075 3.075 0 00-.106-.774zM74.255 143.167l-29.648-16.779 31.136-17.926.001-.001 34.164-19.669 29.674 17.084-21.772 12.428-43.555 24.863zm68.329-76.259v33.841l-12.475-7.182-17.231-9.92V49.806l12.475 7.182 17.231 9.92zm2.97-39.335l29.693 17.095-29.693 17.095-29.693-17.095 29.693-17.095zM54.06 114.089l-12.475 7.182V46.733l17.231-9.92 12.475-7.182v74.537l-17.231 9.921zM38.614 7.398l29.693 17.095-29.693 17.095L8.921 24.493 38.614 7.398zM5.938 29.632l12.475 7.182 17.231 9.92v79.676l.001.005-.001.006c0 .114.032.221.045.333.017.146.021.294.059.434l.002.007c.032.117.094.222.14.334.051.124.088.255.156.371a.036.036 0 00.004.009c.061.105.149.191.222.288.081.105.149.22.244.314l.008.01c.084.083.19.142.284.215.106.083.202.178.32.247l.013.005.011.008 34.139 19.321v34.175L5.939 144.867V29.632h-.001zm136.646 115.235l-65.352 37.625V148.31l48.399-27.628 16.953-9.677v33.862zm35.646-61.22l-29.706 17.102V66.908l17.231-9.92 12.475-7.182v33.841z"/>
-                        </g>
-                    </svg>
-                </div>
-
-                <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
-                    <div class="grid grid-cols-1 md:grid-cols-2">
-                        <div class="p-6">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel.com/docs" class="underline text-gray-900 dark:text-white">Documentation</a></div>
-                            </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel has wonderful, thorough documentation covering every aspect of the framework. Whether you are new to the framework or have previous experience with Laravel, we recommend reading all of the documentation from beginning to end.
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laracasts.com" class="underline text-gray-900 dark:text-white">Laracasts</a></div>
-                            </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.
+                        </section>
+                        <section
+                            class="elementor-section elementor-top-section elementor-element elementor-element-2cb9b48 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                            data-id="2cb9b48" data-element_type="section">
+                            <div class="elementor-container elementor-column-gap-no">
+                                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1200e9f"
+                                    data-id="1200e9f" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-f0db114 elementor-widget elementor-widget-varsity-course-features"
+                                            data-id="f0db114" data-element_type="widget"
+                                            data-widget_type="varsity-course-features.default">
+                                            <div class="elementor-widget-container">
+                                                <!-- course features part here -->
+                                                <section class="course_details padding_bottom">
+                                                    <div class="container">
+                                                        <div class="row justify-content-between align-items-center">
+                                                            <div class="col-xl-12 col-md-12">
+                                                                <div class="course_details_iner">
+                                                                    <div class="single_course_list" data-aos='fade-up'
+                                                                        data-aos-duration="800">
+                                                                        <img src="https://varsity.mhrtheme.com/wp-content/uploads/2021/09/course_1.jpg"
+                                                                            alt="">
+                                                                        <h4>Talim yo'nalishlari</h4>
+                                                                        <p>Tosser what plonker mufty squiffy the wireless
+                                                                            the monty.</p>
+                                                                    </div>
+                                                                    <div class="single_course_list" data-aos='fade-up'
+                                                                        data-aos-duration="1300">
+                                                                        <img src="https://varsity.mhrtheme.com/wp-content/uploads/2021/09/course_2.jpg"
+                                                                            alt="">
+                                                                        <h4>Masofaviy talim</h4>
+                                                                        <p>Tosser what plonker mufty squiffy the wireless
+                                                                            the monty.</p>
+                                                                    </div>
+                                                                    <div class="single_course_list" data-aos='fade-up'
+                                                                        data-aos-duration="1600">
+                                                                        <img src="https://varsity.mhrtheme.com/wp-content/uploads/2021/09/course_3.jpg"
+                                                                            alt="">
+                                                                        <h4>Talim haqida</h4>
+                                                                        <p>Tosser what plonker mufty squiffy the wireless
+                                                                            the monty.</p>
+                                                                    </div>
+                                                                    <div class="single_course_list" data-aos='fade-up'
+                                                                        data-aos-duration="1900">
+                                                                        <img src="https://varsity.mhrtheme.com/wp-content/uploads/2021/09/course_4.jpg"
+                                                                            alt="">
+                                                                        <h4>Universited hayoti</h4>
+                                                                        <p>Tosser what plonker mufty squiffy the wireless
+                                                                            the monty.</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            {{-- <div class="col-xl-4 col-md-5" data-aos='fade-up'
+                                                                data-aos-duration="1200">
+                                                                <div class="course_registration">
+                                                                    <div class="course_registration_form">
+                                                                        <h3>Registration for Course Enroll</h3>
+                                                                        <div role="form" class="wpcf7"
+                                                                            id="wpcf7-f382-p12-o1" lang="en-US"
+                                                                            dir="ltr">
+                                                                            <div class="screen-reader-response">
+                                                                                <p role="status" aria-live="polite"
+                                                                                    aria-atomic="true"></p>
+                                                                                <ul></ul>
+                                                                            </div>
+                                                                            <form action="/#wpcf7-f382-p12-o1"
+                                                                                method="post" class="wpcf7-form init"
+                                                                                novalidate="novalidate"
+                                                                                data-status="init">
+                                                                                <div style="display: none;">
+                                                                                    <input type="hidden" name="_wpcf7"
+                                                                                        value="382" />
+                                                                                    <input type="hidden"
+                                                                                        name="_wpcf7_version"
+                                                                                        value="5.5.6" />
+                                                                                    <input type="hidden"
+                                                                                        name="_wpcf7_locale"
+                                                                                        value="en_US" />
+                                                                                    <input type="hidden"
+                                                                                        name="_wpcf7_unit_tag"
+                                                                                        value="wpcf7-f382-p12-o1" />
+                                                                                    <input type="hidden"
+                                                                                        name="_wpcf7_container_post"
+                                                                                        value="12" />
+                                                                                    <input type="hidden"
+                                                                                        name="_wpcf7_posted_data_hash"
+                                                                                        value="" />
+                                                                                </div>
+                                                                                <p><span
+                                                                                        class="wpcf7-form-control-wrap text-198"><input
+                                                                                            type="text" name="text-198"
+                                                                                            value="" size="40"
+                                                                                            class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                                                                            aria-required="true"
+                                                                                            aria-invalid="false"
+                                                                                            placeholder="Name" /></span>
+                                                                                </p>
+                                                                                <p><span
+                                                                                        class="wpcf7-form-control-wrap email-693"><input
+                                                                                            type="email"
+                                                                                            name="email-693"
+                                                                                            value="" size="40"
+                                                                                            class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
+                                                                                            aria-required="true"
+                                                                                            aria-invalid="false"
+                                                                                            placeholder="Email" /></span>
+                                                                                </p>
+                                                                                <p><span
+                                                                                        class="wpcf7-form-control-wrap tel-714"><input
+                                                                                            type="tel" name="tel-714"
+                                                                                            value="" size="40"
+                                                                                            class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel"
+                                                                                            aria-required="true"
+                                                                                            aria-invalid="false"
+                                                                                            placeholder="Phone" /></span>
+                                                                                </p>
+                                                                                <p><span
+                                                                                        class="wpcf7-form-control-wrap menu-986"><select
+                                                                                            name="menu-986"
+                                                                                            class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required niceSelect"
+                                                                                            aria-required="true"
+                                                                                            aria-invalid="false">
+                                                                                            <option value="Courses Name">
+                                                                                                Courses Name</option>
+                                                                                            <option value="Courses Name 1">
+                                                                                                Courses Name 1</option>
+                                                                                            <option value="Courses Name 2">
+                                                                                                Courses Name 2</option>
+                                                                                            <option value="Courses Name 3">
+                                                                                                Courses Name 3</option>
+                                                                                            <option value="Courses Name 4">
+                                                                                                Courses Name 4</option>
+                                                                                            <option value="Courses Name 5">
+                                                                                                Courses Name 5</option>
+                                                                                        </select></span></p>
+                                                                                <p><input type="submit" value="Apply Now"
+                                                                                        class="wpcf7-form-control has-spinner wpcf7-submit btn_1" />
+                                                                                </p>
+                                                                                <div class="wpcf7-response-output"
+                                                                                    aria-hidden="true"></div>
+                                                                            </form>
+                                                                        </div>
+                                                                    </div>
+                                                                    <img src="https://varsity.mhrtheme.com/wp-content/themes/varsity/assets/img/animated_icon/cources_details_bg.png"
+                                                                        alt="#"
+                                                                        class="custom-animation1 cources_details_bg">
+                                                                    <img src="https://varsity.mhrtheme.com/wp-content/themes/varsity/assets/img/animated_icon/animated_icon_1.png"
+                                                                        alt="#"
+                                                                        class="custom-animation2 cources_details_icon">
+                                                                </div>
+                                                            </div> --}}
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                                <!-- course features part end -->
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </section>
+                        {{-- <section
+                            class="elementor-section elementor-top-section elementor-element elementor-element-142c2f5 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                            data-id="142c2f5" data-element_type="section">
+                            <div class="elementor-container elementor-column-gap-no">
+                                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-43a4602"
+                                    data-id="43a4602" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-7a0d8d4 elementor-widget elementor-widget-varsity-about-us"
+                                            data-id="7a0d8d4" data-element_type="widget"
+                                            data-widget_type="varsity-about-us.default">
+                                            <div class="elementor-widget-container">
 
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel-news.com/" class="underline text-gray-900 dark:text-white">Laravel News</a></div>
-                            </div>
+                                                <!-- about us part here -->
+                                                <section class="about_us section_padding">
+                                                    <div class="container">
+                                                        <div class="row justify-content-between align-items-center">
+                                                            <div class="col-xl-5 col-md-6" data-aos='fade-up'
+                                                                data-aos='fade-up' data-aos-easing="linear"
+                                                                data-aos-duration="700">
+                                                                <div class="about_us_img">
+                                                                    <img src="https://varsity.mhrtheme.com/wp-content/uploads/2021/09/about.png"
+                                                                        alt="#" class="img-fluid">
+                                                                    <div class="about_tricker">
+                                                                        <div class="tricker_iner">
+                                                                            <p>Trusted By</p>
+                                                                            <span class="timer" data-from="0"
+                                                                                data-to="50"></span><span>k+ </span>
 
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel News is a community driven portal and newsletter aggregating all of the latest and most important news in the Laravel ecosystem, including new package releases and tutorials.
+                                                                        </div>
+                                                                    </div>
+                                                                    <img src="https://varsity.mhrtheme.com/wp-content/themes/varsity/assets/img/animated_icon/about_icon.png"
+                                                                        alt="#"
+                                                                        class="about_icon custom-animation">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-6 col-md-6" data-aos='fade-up'
+                                                                data-aos='fade-up' data-aos-easing="linear"
+                                                                data-aos-duration="700">
+                                                                <div class="about_us_details">
+                                                                    <h2>We are Experts<br />Learning Institution</h2>
+                                                                    <h3>20 Years of Experience</h3>
+                                                                    <p>Do one absolutely bladdered say bugger all mate only
+                                                                        a quid that<br />chip shop amongst, cuppa excuse my
+                                                                        French lemon squeezy bender<br />zonked my lady gosh
+                                                                        cup of tea, have it spiffing good time
+                                                                        naff<br />wind up codswallop crikey.</p>
+                                                                    <h3>Call Us +456 968 562 75</h3> <a
+                                                                        href="https://varsity.mhrtheme.com/lp-courses/"
+                                                                        class="btn_1">View Courses</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <img src="https://varsity.mhrtheme.com/wp-content/themes/varsity/assets/img/icon/about_shape_01.png"
+                                                        alt="#" class="about_sharp_1">
+                                                    <img src="https://varsity.mhrtheme.com/wp-content/themes/varsity/assets/img/icon/about_shape_02.png"
+                                                        alt="#" class="about_sharp_2 custom-animation2">
+                                                    <img src="https://varsity.mhrtheme.com/wp-content/themes/varsity/assets/img/icon/about_shape_03.png"
+                                                        alt="#" class="about_sharp_3 custom-animation3">
+                                                </section>
+                                                <!-- about us part end -->
+
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-l">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold text-gray-900 dark:text-white">Vibrant Ecosystem</div>
-                            </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel's robust library of first-party tools and libraries, such as <a href="https://forge.laravel.com" class="underline">Forge</a>, <a href="https://vapor.laravel.com" class="underline">Vapor</a>, <a href="https://nova.laravel.com" class="underline">Nova</a>, and <a href="https://envoyer.io" class="underline">Envoyer</a> help you take your projects to the next level. Pair them with powerful open source libraries like <a href="https://laravel.com/docs/billing" class="underline">Cashier</a>, <a href="https://laravel.com/docs/dusk" class="underline">Dusk</a>, <a href="https://laravel.com/docs/broadcasting" class="underline">Echo</a>, <a href="https://laravel.com/docs/horizon" class="underline">Horizon</a>, <a href="https://laravel.com/docs/sanctum" class="underline">Sanctum</a>, <a href="https://laravel.com/docs/telescope" class="underline">Telescope</a>, and more.
+                        </section> --}}
+                        <section
+                            class="elementor-section elementor-top-section elementor-element elementor-element-b2cba99 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                            data-id="b2cba99" data-element_type="section">
+                            <div class="elementor-container elementor-column-gap-no">
+                                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-fc02be3"
+                                    data-id="fc02be3" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-944c9fb elementor-widget elementor-widget-varsity-course-category"
+                                            data-id="944c9fb" data-element_type="widget"
+                                            data-widget_type="varsity-course-category.default">
+                                            <div class="elementor-widget-container">
+                                                <!-- course category part here -->
+                                                <section class="course_category section_padding">
+                                                    <div class="container">
+                                                        <div class="row justify-content-center">
+                                                            <div class="col-lg-6" data-aos='fade-up'
+                                                                data-aos-duration="700">
+                                                                <div class="section_tittle">
+                                                                    <h2>Masofaviy ta'lim <br> bo'limlari</h2>
+                                                                    <p>Toshkent davlat iqtisodiyot universiteti To'rtko'l fakulteti masofaviy talim tizimidagi fanlar ro'yxati!</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12" data-aos='fade-up'
+                                                                data-aos-duration="1000">
+                                                                <div
+                                                                    class="course_category_item course_category_item_new owl-carousel">
+                                                                    <div>
+                                                                        <a href="https://varsity.mhrtheme.com/course-category/arts-humanities/"
+                                                                            class="single_category_item pink">
+                                                                            <img src="https://varsity.mhrtheme.com/wp-content/uploads/2021/09/category_icon_1.png"
+                                                                                alt="#">
+                                                                            <h4>Arts &amp; Humanities</h4>
+                                                                            <p>2 Courses</p>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="https://varsity.mhrtheme.com/course-category/business/"
+                                                                            class="single_category_item green">
+                                                                            <img src="https://varsity.mhrtheme.com/wp-content/uploads/2021/09/category_icon_4.png"
+                                                                                alt="#">
+                                                                            <h4>Business</h4>
+                                                                            <p>2 Courses</p>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="https://varsity.mhrtheme.com/course-category/computer-science/"
+                                                                            class="single_category_item blue">
+                                                                            <img src="https://varsity.mhrtheme.com/wp-content/uploads/2021/09/category_icon_4-1.png"
+                                                                                alt="#">
+                                                                            <h4>Computer Science</h4>
+                                                                            <p>2 Courses</p>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="https://varsity.mhrtheme.com/course-category/data-science/"
+                                                                            class="single_category_item yellow">
+                                                                            <img src="https://varsity.mhrtheme.com/wp-content/uploads/2021/09/category_icon_3.png"
+                                                                                alt="#">
+                                                                            <h4>Data Science</h4>
+                                                                            <p>1 Courses</p>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="https://varsity.mhrtheme.com/course-category/language-learning/"
+                                                                            class="single_category_item yellow">
+                                                                            <img src="https://varsity.mhrtheme.com/wp-content/uploads/2021/09/category_icon_3.png"
+                                                                                alt="#">
+                                                                            <h4>Language Learning</h4>
+                                                                            <p>1 Courses</p>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="https://varsity.mhrtheme.com/course-category/math-logic/"
+                                                                            class="single_category_item blue">
+                                                                            <img src="https://varsity.mhrtheme.com/wp-content/uploads/2021/09/category_icon_4-1.png"
+                                                                                alt="#">
+                                                                            <h4>Math &amp; Logic</h4>
+                                                                            <p>1 Courses</p>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                                <!-- course category part end -->
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </section>
+                        <section
+                            class="elementor-section elementor-top-section elementor-element elementor-element-898ecb7 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                            data-id="898ecb7" data-element_type="section">
+                            <div class="elementor-container elementor-column-gap-no">
+                                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-321f007"
+                                    data-id="321f007" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-8a96f66 elementor-widget elementor-widget-varsity-popular-course"
+                                            data-id="8a96f66" data-element_type="widget"
+                                            data-widget_type="varsity-popular-course.default">
+                                            <div class="elementor-widget-container">
+
+                                                <!-- popular course part here -->
+                                                <section class="popular_course section_padding section_bg">
+                                                    <div class="container">
+                                                        <div class="row justify-content-center">
+                                                            <div class="col-lg-6" data-aos='fade-up' data-aos='fade-up'
+                                                                data-aos-duration="1500">
+                                                                <div class="section_tittle">
+                                                                    <h2>Eng talabgir Kurslar<br></h2>
+                                                                    <p>Hozirgi zamondagi eng talab ko'p kasblarni o'rgatuvchi kurslar!</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12" data-aos='fade-up'
+                                                                data-aos-duration="1200">
+                                                                <div
+                                                                    class="popular_courses_item popular_courses_item_new owl-carousel">
+
+                                                                    <div>
+                                                                        <div class="single_courses_item">
+                                                                            <a
+                                                                                href="https://varsity.mhrtheme.com/courses/software-development/">
+                                                                                <img loading="lazy" width="370"
+                                                                                    height="280"
+                                                                                    src="https://varsity.mhrtheme.com/wp-content/uploads/2021/09/popular_item_9.png"
+                                                                                    class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                                                                                    alt="" /> </a>
+                                                                            <div class="courses_item_iner">
+                                                                                <div class="courses_review">
+                                                                                    <a class="courses_btn">
+                                                                                        &#36;120.00 </a>
+                                                                                    <div class="review_icon">
+                                                                                        <i class="fas fa-star"></i>
+                                                                                        <i class="fas fa-star"></i>
+                                                                                        <i class="fas fa-star"></i>
+                                                                                        <i class="fas fa-star"></i>
+                                                                                        <i class="fas fa-star"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <a
+                                                                                    href="https://varsity.mhrtheme.com/courses/software-development/">
+                                                                                    <h4>Software Development</h4>
+                                                                                </a>
+                                                                                <a class="course_author">
+                                                                                    <img alt='User Avatar'
+                                                                                        src='https://secure.gravatar.com/avatar/4263957c7720ae9d83bfe19863271423?s=96&#038;d=mm&#038;r=g'
+                                                                                        class='avatar avatar-96 photo'
+                                                                                        height='250' width='250'
+                                                                                        loading='lazy' />
+                                                                                    <p class="author_name"><a
+                                                                                            href="https://varsity.mhrtheme.com/lp-profile/Adam+Smith/"><span>Adam
+                                                                                                Smith</span></a></p>
+                                                                                </a>
+                                                                                <div class="popular_course_list">
+                                                                                    <p><i class="icon_book_alt"></i>
+                                                                                        <span
+                                                                                            class="lp-label label-11 Lessons">
+                                                                                            11 Lessons </span>
+                                                                                    </p>
+                                                                                    <p><i class="icon_clock_alt"></i>
+                                                                                        10 weeks </p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <div class="single_courses_item">
+                                                                            <a
+                                                                                href="https://varsity.mhrtheme.com/courses/business-essentials/">
+                                                                                <img width="370" height="280"
+                                                                                    src="https://varsity.mhrtheme.com/wp-content/uploads/2021/09/popular_item_8.png"
+                                                                                    class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                                                                                    alt="" loading="lazy" /> </a>
+                                                                            <div class="courses_item_iner">
+                                                                                <div class="courses_review">
+                                                                                    <a class="courses_btn">
+                                                                                        &#36;110.00 </a>
+                                                                                    <div class="review_icon">
+                                                                                        <i class="fas fa-star"></i>
+                                                                                        <i class="fas fa-star"></i>
+                                                                                        <i class="fas fa-star"></i>
+                                                                                        <i class="fas fa-star"></i>
+                                                                                        <i class="fas fa-star"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <a
+                                                                                    href="https://varsity.mhrtheme.com/courses/business-essentials/">
+                                                                                    <h4>Business Essentials</h4>
+                                                                                </a>
+                                                                                <a class="course_author">
+                                                                                    <img alt='User Avatar'
+                                                                                        src='https://secure.gravatar.com/avatar/3e6a3fb90c5b3057ad241f37ff58a530?s=96&#038;d=mm&#038;r=g'
+                                                                                        class='avatar avatar-96 photo'
+                                                                                        height='250' width='250'
+                                                                                        loading='lazy' />
+                                                                                    <p class="author_name"><a
+                                                                                            href="https://varsity.mhrtheme.com/lp-profile/Hanson+Deck/"><span>Hanson
+                                                                                                Deck</span></a></p>
+                                                                                </a>
+                                                                                <div class="popular_course_list">
+                                                                                    <p><i class="icon_book_alt"></i>
+                                                                                        <span
+                                                                                            class="lp-label label-0 Lessons">
+                                                                                            0 Lessons </span>
+                                                                                    </p>
+                                                                                    <p><i class="icon_clock_alt"></i>
+                                                                                        10 weeks </p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <div class="single_courses_item">
+                                                                            <a
+                                                                                href="https://varsity.mhrtheme.com/courses/history-philosophy/">
+                                                                                <img width="370" height="280"
+                                                                                    src="https://varsity.mhrtheme.com/wp-content/uploads/2021/09/popular_item_7.png"
+                                                                                    class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                                                                                    alt="" loading="lazy" /> </a>
+                                                                            <div class="courses_item_iner">
+                                                                                <div class="courses_review">
+                                                                                    <a class="courses_btn">
+                                                                                        &#36;110.00 </a>
+                                                                                    <div class="review_icon">
+                                                                                        <i class="fas fa-star"></i>
+                                                                                        <i class="fas fa-star"></i>
+                                                                                        <i class="fas fa-star"></i>
+                                                                                        <i class="fas fa-star"></i>
+                                                                                        <i class="fas fa-star"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <a
+                                                                                    href="https://varsity.mhrtheme.com/courses/history-philosophy/">
+                                                                                    <h4>History &#038; Philosophy</h4>
+                                                                                </a>
+                                                                                <a class="course_author">
+                                                                                    <img alt='User Avatar'
+                                                                                        src='https://secure.gravatar.com/avatar/4263957c7720ae9d83bfe19863271423?s=96&#038;d=mm&#038;r=g'
+                                                                                        class='avatar avatar-96 photo'
+                                                                                        height='250' width='250'
+                                                                                        loading='lazy' />
+                                                                                    <p class="author_name"><a
+                                                                                            href="https://varsity.mhrtheme.com/lp-profile/Adam+Smith/"><span>Adam
+                                                                                                Smith</span></a></p>
+                                                                                </a>
+                                                                                <div class="popular_course_list">
+                                                                                    <p><i class="icon_book_alt"></i>
+                                                                                        <span
+                                                                                            class="lp-label label-0 Lessons">
+                                                                                            0 Lessons </span>
+                                                                                    </p>
+                                                                                    <p><i class="icon_clock_alt"></i>
+                                                                                        10 weeks </p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <div class="single_courses_item">
+                                                                            <a
+                                                                                href="https://varsity.mhrtheme.com/courses/algebra-calculus/">
+                                                                                <img width="370" height="280"
+                                                                                    src="https://varsity.mhrtheme.com/wp-content/uploads/2021/09/popular_item_1.png"
+                                                                                    class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                                                                                    alt="" loading="lazy" /> </a>
+                                                                            <div class="courses_item_iner">
+                                                                                <div class="courses_review">
+                                                                                    <a class="courses_btn">
+                                                                                        &#36;110.00 </a>
+                                                                                    <div class="review_icon">
+                                                                                        <i class="fas fa-star"></i>
+                                                                                        <i class="fas fa-star"></i>
+                                                                                        <i class="fas fa-star"></i>
+                                                                                        <i class="fas fa-star"></i>
+                                                                                        <i class="fas fa-star"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <a
+                                                                                    href="https://varsity.mhrtheme.com/courses/algebra-calculus/">
+                                                                                    <h4>Algebra &#038; Calculus</h4>
+                                                                                </a>
+                                                                                <a class="course_author">
+                                                                                    <img alt='User Avatar'
+                                                                                        src='https://secure.gravatar.com/avatar/4263957c7720ae9d83bfe19863271423?s=96&#038;d=mm&#038;r=g'
+                                                                                        class='avatar avatar-96 photo'
+                                                                                        height='250' width='250'
+                                                                                        loading='lazy' />
+                                                                                    <p class="author_name"><a
+                                                                                            href="https://varsity.mhrtheme.com/lp-profile/Adam+Smith/"><span>Adam
+                                                                                                Smith</span></a></p>
+                                                                                </a>
+                                                                                <div class="popular_course_list">
+                                                                                    <p><i class="icon_book_alt"></i>
+                                                                                        <span
+                                                                                            class="lp-label label-0 Lessons">
+                                                                                            0 Lessons </span>
+                                                                                    </p>
+                                                                                    <p><i class="icon_clock_alt"></i>
+                                                                                        10 weeks </p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <div class="single_courses_item">
+                                                                            <a
+                                                                                href="https://varsity.mhrtheme.com/courses/english-learning/">
+                                                                                <img width="370" height="280"
+                                                                                    src="https://varsity.mhrtheme.com/wp-content/uploads/2021/09/popular_item_2.png"
+                                                                                    class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                                                                                    alt="" loading="lazy" /> </a>
+                                                                            <div class="courses_item_iner">
+                                                                                <div class="courses_review">
+                                                                                    <a class="courses_btn">
+                                                                                        Free </a>
+                                                                                    <div class="review_icon">
+                                                                                        <i class="fas fa-star"></i>
+                                                                                        <i class="fas fa-star"></i>
+                                                                                        <i class="fas fa-star"></i>
+                                                                                        <i class="fas fa-star"></i>
+                                                                                        <i class="fas fa-star"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <a
+                                                                                    href="https://varsity.mhrtheme.com/courses/english-learning/">
+                                                                                    <h4>English Learning</h4>
+                                                                                </a>
+                                                                                <a class="course_author">
+                                                                                    <img alt='User Avatar'
+                                                                                        src='https://secure.gravatar.com/avatar/3e6a3fb90c5b3057ad241f37ff58a530?s=96&#038;d=mm&#038;r=g'
+                                                                                        class='avatar avatar-96 photo'
+                                                                                        height='250' width='250'
+                                                                                        loading='lazy' />
+                                                                                    <p class="author_name"><a
+                                                                                            href="https://varsity.mhrtheme.com/lp-profile/Hanson+Deck/"><span>Hanson
+                                                                                                Deck</span></a></p>
+                                                                                </a>
+                                                                                <div class="popular_course_list">
+                                                                                    <p><i class="icon_book_alt"></i>
+                                                                                        <span
+                                                                                            class="lp-label label-11 Lessons">
+                                                                                            11 Lessons </span>
+                                                                                    </p>
+                                                                                    <p><i class="icon_clock_alt"></i>
+                                                                                        10 weeks </p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <div class="single_courses_item">
+                                                                            <a
+                                                                                href="https://varsity.mhrtheme.com/courses/business-strategy/">
+                                                                                <img width="370" height="280"
+                                                                                    src="https://varsity.mhrtheme.com/wp-content/uploads/2021/09/popular_item_3.png"
+                                                                                    class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                                                                                    alt="" loading="lazy" /> </a>
+                                                                            <div class="courses_item_iner">
+                                                                                <div class="courses_review">
+                                                                                    <a class="courses_btn">
+                                                                                        Free </a>
+                                                                                    <div class="review_icon">
+                                                                                        <i class="fas fa-star"></i>
+                                                                                        <i class="fas fa-star"></i>
+                                                                                        <i class="fas fa-star"></i>
+                                                                                        <i class="fas fa-star"></i>
+                                                                                        <i class="fas fa-star"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <a
+                                                                                    href="https://varsity.mhrtheme.com/courses/business-strategy/">
+                                                                                    <h4>Business Strategy</h4>
+                                                                                </a>
+                                                                                <a class="course_author">
+                                                                                    <img alt='User Avatar'
+                                                                                        src='https://secure.gravatar.com/avatar/3e6a3fb90c5b3057ad241f37ff58a530?s=96&#038;d=mm&#038;r=g'
+                                                                                        class='avatar avatar-96 photo'
+                                                                                        height='250' width='250'
+                                                                                        loading='lazy' />
+                                                                                    <p class="author_name"><a
+                                                                                            href="https://varsity.mhrtheme.com/lp-profile/Hanson+Deck/"><span>Hanson
+                                                                                                Deck</span></a></p>
+                                                                                </a>
+                                                                                <div class="popular_course_list">
+                                                                                    <p><i class="icon_book_alt"></i>
+                                                                                        <span
+                                                                                            class="lp-label label-11 Lessons">
+                                                                                            11 Lessons </span>
+                                                                                    </p>
+                                                                                    <p><i class="icon_clock_alt"></i>
+                                                                                        10 weeks </p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <div class="single_courses_item">
+                                                                            <a
+                                                                                href="https://varsity.mhrtheme.com/courses/music-art/">
+                                                                                <img width="370" height="280"
+                                                                                    src="https://varsity.mhrtheme.com/wp-content/uploads/2021/09/popular_item_4.png"
+                                                                                    class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                                                                                    alt="" loading="lazy" /> </a>
+                                                                            <div class="courses_item_iner">
+                                                                                <div class="courses_review">
+                                                                                    <a class="courses_btn">
+                                                                                        &#36;100.00 </a>
+                                                                                    <div class="review_icon">
+                                                                                        <i class="fas fa-star"></i>
+                                                                                        <i class="fas fa-star"></i>
+                                                                                        <i class="fas fa-star"></i>
+                                                                                        <i class="fas fa-star"></i>
+                                                                                        <i class="fas fa-star"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <a
+                                                                                    href="https://varsity.mhrtheme.com/courses/music-art/">
+                                                                                    <h4>Music &#038; Art</h4>
+                                                                                </a>
+                                                                                <a class="course_author">
+                                                                                    <img alt='User Avatar'
+                                                                                        src='https://secure.gravatar.com/avatar/4263957c7720ae9d83bfe19863271423?s=96&#038;d=mm&#038;r=g'
+                                                                                        class='avatar avatar-96 photo'
+                                                                                        height='250' width='250'
+                                                                                        loading='lazy' />
+                                                                                    <p class="author_name"><a
+                                                                                            href="https://varsity.mhrtheme.com/lp-profile/Adam+Smith/"><span>Adam
+                                                                                                Smith</span></a></p>
+                                                                                </a>
+                                                                                <div class="popular_course_list">
+                                                                                    <p><i class="icon_book_alt"></i>
+                                                                                        <span
+                                                                                            class="lp-label label-117 Lessons">
+                                                                                            117 Lessons </span>
+                                                                                    </p>
+                                                                                    <p><i class="icon_clock_alt"></i>
+                                                                                        10 weeks </p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <div class="single_courses_item">
+                                                                            <a
+                                                                                href="https://varsity.mhrtheme.com/courses/data-analysis/">
+                                                                                <img width="370" height="280"
+                                                                                    src="https://varsity.mhrtheme.com/wp-content/uploads/2021/09/popular_item_5.png"
+                                                                                    class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                                                                                    alt="" loading="lazy" /> </a>
+                                                                            <div class="courses_item_iner">
+                                                                                <div class="courses_review">
+                                                                                    <a class="courses_btn">
+                                                                                        &#36;125.00 </a>
+                                                                                    <div class="review_icon">
+                                                                                        <i class="fas fa-star"></i>
+                                                                                        <i class="fas fa-star"></i>
+                                                                                        <i class="fas fa-star"></i>
+                                                                                        <i class="fas fa-star"></i>
+                                                                                        <i class="fas fa-star"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <a
+                                                                                    href="https://varsity.mhrtheme.com/courses/data-analysis/">
+                                                                                    <h4>Data Analysis</h4>
+                                                                                </a>
+                                                                                <a class="course_author">
+                                                                                    <img alt='User Avatar'
+                                                                                        src='https://secure.gravatar.com/avatar/3e6a3fb90c5b3057ad241f37ff58a530?s=96&#038;d=mm&#038;r=g'
+                                                                                        class='avatar avatar-96 photo'
+                                                                                        height='250' width='250'
+                                                                                        loading='lazy' />
+                                                                                    <p class="author_name"><a
+                                                                                            href="https://varsity.mhrtheme.com/lp-profile/Hanson+Deck/"><span>Hanson
+                                                                                                Deck</span></a></p>
+                                                                                </a>
+                                                                                <div class="popular_course_list">
+                                                                                    <p><i class="icon_book_alt"></i>
+                                                                                        <span
+                                                                                            class="lp-label label-117 Lessons">
+                                                                                            117 Lessons </span>
+                                                                                    </p>
+                                                                                    <p><i class="icon_clock_alt"></i>
+                                                                                        10 weeks </p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <div class="single_courses_item">
+                                                                            <a
+                                                                                href="https://varsity.mhrtheme.com/courses/computer-security-network/">
+                                                                                <img width="370" height="280"
+                                                                                    src="https://varsity.mhrtheme.com/wp-content/uploads/2021/09/popular_item_6.png"
+                                                                                    class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                                                                                    alt="" loading="lazy" /> </a>
+                                                                            <div class="courses_item_iner">
+                                                                                <div class="courses_review">
+                                                                                    <a class="courses_btn">
+                                                                                        &#36;160.00 </a>
+                                                                                    <div class="review_icon">
+                                                                                        <i class="fas fa-star"></i>
+                                                                                        <i class="fas fa-star"></i>
+                                                                                        <i class="fas fa-star"></i>
+                                                                                        <i class="fas fa-star"></i>
+                                                                                        <i class="fas fa-star"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <a
+                                                                                    href="https://varsity.mhrtheme.com/courses/computer-security-network/">
+                                                                                    <h4>Computer Security &#038; Network
+                                                                                    </h4>
+                                                                                </a>
+                                                                                <a class="course_author">
+                                                                                    <img alt='User Avatar'
+                                                                                        src='https://secure.gravatar.com/avatar/4263957c7720ae9d83bfe19863271423?s=96&#038;d=mm&#038;r=g'
+                                                                                        class='avatar avatar-96 photo'
+                                                                                        height='250' width='250'
+                                                                                        loading='lazy' />
+                                                                                    <p class="author_name"><a
+                                                                                            href="https://varsity.mhrtheme.com/lp-profile/Adam+Smith/"><span>Adam
+                                                                                                Smith</span></a></p>
+                                                                                </a>
+                                                                                <div class="popular_course_list">
+                                                                                    <p><i class="icon_book_alt"></i>
+                                                                                        <span
+                                                                                            class="lp-label label-117 Lessons">
+                                                                                            117 Lessons </span>
+                                                                                    </p>
+                                                                                    <p><i class="icon_clock_alt"></i>
+                                                                                        10 weeks </p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                                <!-- popular course part end -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section
+                            class="elementor-section elementor-top-section elementor-element elementor-element-9adf9fa elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                            data-id="9adf9fa" data-element_type="section">
+                            <div class="elementor-container elementor-column-gap-no">
+                                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-54c9584"
+                                    data-id="54c9584" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-f854660 elementor-widget elementor-widget-varsity-instructor"
+                                            data-id="f854660" data-element_type="widget"
+                                            data-widget_type="varsity-instructor.default">
+                                            <div class="elementor-widget-container">
+                                                <!-- instructor list part here -->
+                                                <section class="instructor_list section_padding">
+                                                    <div class="container">
+                                                        <div class="row justify-content-center" data-aos='fade-up'
+                                                            data-aos='fade-up' data-aos-easing="linear"
+                                                            data-aos-duration="1000">
+                                                            <div class="col-lg-6">
+                                                                <div class="section_tittle">
+                                                                    <h2>Top O'qituvchilar</h2>
+                                                                    <p>Toshkent davlat iqtisodiyot universiteti To'rtko'l fakulteti <b>O'qituvchilari</b>!</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-lg-3 col-sm-6" data-aos='fade-up'
+                                                                data-aos-easing="linear" data-aos-duration="800">
+                                                                <div class="single_instructor_item">
+                                                                    <div class="single_instructor">
+                                                                        <a class="instructor_img">
+                                                                            <img src="https://varsity.mhrtheme.com/wp-content/uploads/2021/09/instructor_1.png"
+                                                                                alt="#" class="img-fluid">
+                                                                        </a>
+                                                                        <div class="social_icon">
+                                                                            <a href="#">
+                                                                                <i class="social_facebook"></i>
+                                                                            </a>
+                                                                            <a href="#">
+                                                                                <i class="social_twitter"></i>
+                                                                            </a>
+                                                                            <a href="#">
+                                                                                <i class="social_instagram"></i>
+                                                                            </a>
+                                                                            <a href="#">
+                                                                                <i class="social_linkedin"></i>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="single_instructor_tittle">
+                                                                        <h4><a>Dylan Meringue</a></h4>
+                                                                        <p>Sales Director</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-3 col-sm-6" data-aos='fade-up'
+                                                                data-aos-easing="linear" data-aos-duration="900">
+                                                                <div class="single_instructor_item">
+                                                                    <div class="single_instructor">
+                                                                        <a class="instructor_img">
+                                                                            <img src="https://varsity.mhrtheme.com/wp-content/uploads/2021/09/instructor_2.png"
+                                                                                alt="#" class="img-fluid">
+                                                                        </a>
+                                                                        <div class="social_icon">
+                                                                            <a href="#">
+                                                                                <i class="social_facebook"></i>
+                                                                            </a>
+                                                                            <a href="#">
+                                                                                <i class="social_twitter"></i>
+                                                                            </a>
+                                                                            <a href="#">
+                                                                                <i class="social_instagram"></i>
+                                                                            </a>
+                                                                            <a href="#">
+                                                                                <i class="social_linkedin"></i>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="single_instructor_tittle">
+                                                                        <h4><a>Chauffina Carr</a></h4>
+                                                                        <p>Mathematics</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-3 col-sm-6" data-aos='fade-up'
+                                                                data-aos-easing="linear" data-aos-duration="1000">
+                                                                <div class="single_instructor_item">
+                                                                    <div class="single_instructor">
+                                                                        <a class="instructor_img">
+                                                                            <img src="https://varsity.mhrtheme.com/wp-content/uploads/2021/09/instructor_3.png"
+                                                                                alt="#" class="img-fluid">
+                                                                        </a>
+                                                                        <div class="social_icon">
+                                                                            <a href="#">
+                                                                                <i class="social_facebook"></i>
+                                                                            </a>
+                                                                            <a href="#">
+                                                                                <i class="social_twitter"></i>
+                                                                            </a>
+                                                                            <a href="#">
+                                                                                <i class="social_instagram"></i>
+                                                                            </a>
+                                                                            <a href="#">
+                                                                                <i class="social_linkedin"></i>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="single_instructor_tittle">
+                                                                        <h4><a>Jason Response</a></h4>
+                                                                        <p>Marketing</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-3 col-sm-6" data-aos='fade-up'
+                                                                data-aos-easing="linear" data-aos-duration="1100">
+                                                                <div class="single_instructor_item">
+                                                                    <div class="single_instructor">
+                                                                        <a class="instructor_img">
+                                                                            <img src="https://varsity.mhrtheme.com/wp-content/uploads/2021/09/instructor_4.png"
+                                                                                alt="#" class="img-fluid">
+                                                                        </a>
+                                                                        <div class="social_icon">
+                                                                            <a href="#">
+                                                                                <i class="social_facebook"></i>
+                                                                            </a>
+                                                                            <a href="#">
+                                                                                <i class="social_twitter"></i>
+                                                                            </a>
+                                                                            <a href="#">
+                                                                                <i class="social_instagram"></i>
+                                                                            </a>
+                                                                            <a href="#">
+                                                                                <i class="social_linkedin"></i>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="single_instructor_tittle">
+                                                                        <h4><a>Hanson Deck</a></h4>
+                                                                        <p>IT Specialist</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                                <!-- instructor list part end -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section
+                            class="elementor-section elementor-top-section elementor-element elementor-element-af263c1 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                            data-id="af263c1" data-element_type="section">
+                            <div class="elementor-container elementor-column-gap-no">
+                                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d7c3197"
+                                    data-id="d7c3197" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-1d66b66 elementor-widget elementor-widget-varsity-motivation"
+                                            data-id="1d66b66" data-element_type="widget"
+                                            data-widget_type="varsity-motivation.default">
+                                            <div class="elementor-widget-container">
+
+                                                <!-- motivation part here -->
+                                                <section class="motivation section_padding">
+                                                    <div class="container">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-lg-5 col-md-6">
+                                                                <div class="motivation_content">
+                                                                    <h2>Your motivition & attention will teach you best</h2>
+                                                                    <p>Cack gormless young delinquent that bits and bobs he
+                                                                        nicked it mush, spiffing smashing he legged it have
+                                                                        it codswallop.</p>
+                                                                    <ul class="nav nav-tabs" id="motivation_content_tab"
+                                                                        role="tablist">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link single_item"
+                                                                                data-toggle="tab" href="#tab1"
+                                                                                role="tab" aria-selected="true"
+                                                                                id="label1" data-aos='fade-up'
+                                                                                data-aos='fade-up'
+                                                                                data-aos-duration="700">
+                                                                                <i class="fa fa-book"></i>
+                                                                                <p>Graphics Design</p>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link single_item"
+                                                                                data-toggle="tab" href="#tab2"
+                                                                                role="tab" aria-selected="true"
+                                                                                id="label2" data-aos='fade-up'
+                                                                                data-aos='fade-up'
+                                                                                data-aos-duration="800">
+                                                                                <i class="fa fa-bus"></i>
+                                                                                <p>Self Development</p>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link single_item"
+                                                                                data-toggle="tab" href="#tab3"
+                                                                                role="tab" aria-selected="true"
+                                                                                id="label3" data-aos='fade-up'
+                                                                                data-aos='fade-up'
+                                                                                data-aos-duration="900">
+                                                                                <i class="fa fa-anchor"></i>
+                                                                                <p>IT & Software</p>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-content" id="motivation_content_tabcontent">
+                                                        <div class="tab-pane fade" id="tab1" role="tabpanel"
+                                                            aria-labelledby="label1">
+                                                            <div class="motivation_video"
+                                                                style="background-image: url(https://varsity.mhrtheme.com/wp-content/uploads/2021/09/motivation_video_bg.png) ">
+                                                                <a href="https://www.youtube.com/watch?v=f3NWvUV8MD8"
+                                                                    class="animated_play_button popup_youtube">
+                                                                    <span class="flaticon-play-button"></span></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="tab2" role="tabpanel"
+                                                            aria-labelledby="label2">
+                                                            <div class="motivation_video"
+                                                                style="background-image: url(https://varsity.mhrtheme.com/wp-content/uploads/2021/09/banner.jpg) ">
+                                                                <a href="https://www.youtube.com/watch?v=f3NWvUV8MD8"
+                                                                    class="animated_play_button popup_youtube">
+                                                                    <span class="flaticon-play-button"></span></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="tab3" role="tabpanel"
+                                                            aria-labelledby="label3">
+                                                            <div class="motivation_video"
+                                                                style="background-image: url(https://varsity.mhrtheme.com/wp-content/uploads/2021/09/course_thumb.png) ">
+                                                                <a href="https://www.youtube.com/watch?v=f3NWvUV8MD8"
+                                                                    class="animated_play_button popup_youtube">
+                                                                    <span class="flaticon-play-button"></span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                                <!-- motivation part end -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section
+                            class="elementor-section elementor-top-section elementor-element elementor-element-4d16ee6 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                            data-id="4d16ee6" data-element_type="section">
+                            <div class="elementor-container elementor-column-gap-no">
+                                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-42e55b0"
+                                    data-id="42e55b0" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-7bdec2e elementor-widget elementor-widget-varsity-event"
+                                            data-id="7bdec2e" data-element_type="widget"
+                                            data-widget_type="varsity-event.default">
+                                            <div class="elementor-widget-container">
+                                                <!-- event part here -->
+                                                <section class="event_list section_padding">
+                                                    <div class="container">
+                                                        <div class="row justify-content-center" data-aos='fade-up'
+                                                            data-aos-duration="1200">
+                                                            <div class="col-lg-6">
+                                                                <div class="section_tittle">
+                                                                    <h2>Our Upcoming Events</h2>
+                                                                    <p>Jeffrey crikey victoria sponge mush spiffing super
+                                                                        arse over tit matie boy smashing. The little rotter
+                                                                        off his nut codswallop.!</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row justify-content-center">
+                                                            <div class="col-lg-10">
+                                                                <div class="single_event_list" data-aos='fade-up'
+                                                                    data-aos-duration="600">
+                                                                    <img src="https://varsity.mhrtheme.com/wp-content/uploads/2021/09/event_list_1.png"
+                                                                        alt="" class="img-fluid">
+                                                                    <div class="event_list_content">
+                                                                        <h5>14 January, 2022</h5>
+                                                                        <h2>Why you Need Advance Developmemt Process Course?
+                                                                        </h2>
+                                                                        <div class="event_list_tag">
+                                                                            <p><i class="icon_clock_alt"></i>8.30 AM - 5.30
+                                                                                PM</p>
+                                                                            <p><i class="icon_pin_alt"></i>9 Road, Mirpur
+                                                                                Dohs, New York, USA</p>
+                                                                        </div>
+                                                                        <p>He lost his bottle bamboozled golly gosh some
+                                                                            dodgy chav only a quid
+                                                                            my lady chip shop argy-bargy, the bee's knees
+                                                                            morish loo get stuffed
+                                                                            mate pardon me zonked knees.!</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="single_event_list" data-aos='fade-up'
+                                                                    data-aos-duration="800">
+                                                                    <img src="https://varsity.mhrtheme.com/wp-content/uploads/2021/09/event_list_2.png"
+                                                                        alt="" class="img-fluid">
+                                                                    <div class="event_list_content">
+                                                                        <h5>1 April, 2022</h5>
+                                                                        <h2>Graphic Illustration: Design with Color and
+                                                                            Shape</h2>
+                                                                        <div class="event_list_tag">
+                                                                            <p><i class="icon_clock_alt"></i>10.30 AM -
+                                                                                5.30 PM</p>
+                                                                            <p><i class="icon_pin_alt"></i>19 Road,
+                                                                                Dhanmondi Dohs, New York, USA</p>
+                                                                        </div>
+                                                                        <p>He lost his bottle bamboozled golly gosh some
+                                                                            dodgy chav only a quid
+                                                                            my lady chip shop argy-bargy, the bee's knees
+                                                                            morish loo get stuffed
+                                                                            mate pardon me zonked knees.!</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="single_event_list" data-aos='fade-up'
+                                                                    data-aos-duration="1000">
+                                                                    <img src="https://varsity.mhrtheme.com/wp-content/uploads/2021/09/event_list_3.png"
+                                                                        alt="" class="img-fluid">
+                                                                    <div class="event_list_content">
+                                                                        <h5>10 August, 2022</h5>
+                                                                        <h2>Magazine Design Start to Finish: The Inside
+                                                                            Pages</h2>
+                                                                        <div class="event_list_tag">
+                                                                            <p><i class="icon_clock_alt"></i>12.30 AM -
+                                                                                5.30 PM</p>
+                                                                            <p><i class="icon_pin_alt"></i>12 Road,
+                                                                                Mohakhali Dohs, New York, USA</p>
+                                                                        </div>
+                                                                        <p>He lost his bottle bamboozled golly gosh some
+                                                                            dodgy chav only a quid
+                                                                            my lady chip shop argy-bargy, the bee's knees
+                                                                            morish loo get stuffed
+                                                                            mate pardon me zonked knees.!</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="event_list_btn" data-aos='fade-up'
+                                                                    data-aos-anchor-placement="top-center">
+                                                                    <a href="https://varsity.mhrtheme.com/events"
+                                                                        class="btn_3">View All Events</a>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <img src="https://varsity.mhrtheme.com/wp-content/themes/varsity/assets/img/icon/shape_06.png"
+                                                        alt="#" class="about_sharp_1 custom-animation">
+                                                    <img src="https://varsity.mhrtheme.com/wp-content/themes/varsity/assets/img/icon/about_shape_02.png"
+                                                        alt="#" class="about_sharp_2 custom-animation2">
+                                                    <img src="https://varsity.mhrtheme.com/wp-content/themes/varsity/assets/img/icon/about_shape_03.png"
+                                                        alt="#" class="about_sharp_3 custom-animation3">
+                                                    <img src="https://varsity.mhrtheme.com/wp-content/themes/varsity/assets/img/icon/shape_04.png"
+                                                        alt="#" class="about_sharp_4 custom-animation4">
+                                                    <img src="https://varsity.mhrtheme.com/wp-content/themes/varsity/assets/img/icon/shape_05.png"
+                                                        alt="#" class="about_sharp_5 custom-animation5">
+                                                </section>
+                                                <!-- event part end -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section
+                            class="elementor-section elementor-top-section elementor-element elementor-element-96296c6 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                            data-id="96296c6" data-element_type="section">
+                            <div class="elementor-container elementor-column-gap-no">
+                                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0211e38"
+                                    data-id="0211e38" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-5bf17b2 elementor-widget elementor-widget-varsity-review"
+                                            data-id="5bf17b2" data-element_type="widget"
+                                            data-widget_type="varsity-review.default">
+                                            <div class="elementor-widget-container">
+                                                <!-- student review part here -->
+                                                <section class="student_review section_padding">
+                                                    <div class="container">
+                                                        <div class="row justify-content-between align-items-center"
+                                                            data-aos='fade-up' data-aos='fade-up'
+                                                            data-aos-anchor-placement="top-center">
+                                                            <div class="col-xl-5 col-lg-6 col-md-4">
+                                                                <div class="student_review_tittle">
+                                                                    <h2>Student Say About Us.</h2>
+                                                                    <img src="https://varsity.mhrtheme.com/wp-content/themes/varsity/assets/img/quote.png"
+                                                                        alt="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-6 col-lg-6 col-md-8">
+                                                                <div class="student_review_iner owl-carousel"
+                                                                    style="display: block !important;">
+                                                                    <div class="single_student_review">
+                                                                        <p>Loo faff about cockup Harry baking
+                                                                            cakes hunky-dory mush, happy days on your bike
+                                                                            mate cobblers say cor blimey guvnor brown bread,
+                                                                            plastered cuppa bender geeza chimney pot. Haggle
+                                                                            cheesed off butty say cup of char spiffing good
+                                                                            time bum bag so I said gutted mate the bee's
+                                                                            knees queen's english.!</p>
+                                                                        <div class="student_review_content">
+                                                                            <img src="https://varsity.mhrtheme.com/wp-content/uploads/2021/09/student.png"
+                                                                                alt="">
+                                                                            <div class="student_info">
+                                                                                <h4>Lance Bogrol</h4>
+                                                                                <p>UX Designer</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="single_student_review">
+                                                                        <p>Loo faff about cockup Harry baking
+                                                                            cakes hunky-dory mush, happy days on your bike
+                                                                            mate cobblers say cor blimey guvnor brown bread,
+                                                                            plastered cuppa bender geeza chimney pot. Haggle
+                                                                            cheesed off butty say cup of char spiffing good
+                                                                            time bum bag so I said gutted mate the bee's
+                                                                            knees queen's english.!</p>
+                                                                        <div class="student_review_content">
+                                                                            <img src="https://varsity.mhrtheme.com/wp-content/uploads/2021/09/author_1.jpg"
+                                                                                alt="">
+                                                                            <div class="student_info">
+                                                                                <h4>Adam Smith</h4>
+                                                                                <p>Manager</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="circle_shape_1"></div>
+                                                    <div class="circle_shape_2"></div>
+                                                </section>
+                                                <!-- student review part end -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </div>
 
-                <div class="flex justify-center mt-4 sm:items-center sm:justify-between">
-                    <div class="text-center text-sm text-gray-500 sm:text-left">
-                        <div class="flex items-center">
-                            <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" class="-mt-px w-5 h-5 text-gray-400">
-                                <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                            </svg>
+            </main><!-- #main -->
+        </div><!-- #primary -->
 
-                            <a href="https://laravel.bigcartel.com" class="ml-1 underline">
-                                Shop
-                            </a>
 
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="ml-4 -mt-px w-5 h-5 text-gray-400">
-                                <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-                            </svg>
-
-                            <a href="https://github.com/sponsors/taylorotwell" class="ml-1 underline">
-                                Sponsor
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="ml-4 text-center text-sm text-gray-500 sm:text-right sm:ml-0">
-                        Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
-                    </div>
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
+    </div><!-- #content -->
+@endsection

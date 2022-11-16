@@ -19,6 +19,8 @@ class CreateGroupsTable extends Migration
 
             $table->string('name');
             $table->string('mentor_id')->nullable();
+            $table->string('course_id')->nullable();
+
             $table->boolean('active');
 
         });

@@ -59,7 +59,7 @@
                                                 <select class="form-control" name="group_id">
                                                     <option>Group selected</option>
                                                     @foreach ($groups as $group)
-                                                        <option value="{{ $group->id }}">{{ $group->name }}</option>  
+                                                        <option value="{{ $group->id }}">{{ $group->name }}</option>
                                                     @endforeach
                                                 </select>
                                             </td>
@@ -67,7 +67,7 @@
                                                 <select class="form-control" name="group_id">
                                                     <option>Course selected</option>
                                                     @foreach ($courses as $course)
-                                                        <option value="{{ $course->id }}">{{ $course->full_name }}</option>  
+                                                        <option value="{{ $course->id }}">{{ $course->full_name }}</option>
                                                     @endforeach
                                                 </select>
                                             </td>
@@ -92,15 +92,15 @@
                                             <select class="form-control" name="group_id">
                                                 <option>Group selected</option>
                                                 @foreach ($groups as $group)
-                                                    <option value="{{ $group->id }}">{{ $group->name }}</option>  
+                                                    <option value="{{ $group->id }}">{{ $group->name }}</option>
                                                 @endforeach
                                             </select>
                                         </td>
                                         <td>
-                                            <select class="form-control" name="group_id">
+                                            <select class="form-control" name="course_id">
                                                 <option>Course selected</option>
                                                 @foreach ($courses as $course)
-                                                    <option value="{{ $course->id }}">{{ $course->full_name }}</option>  
+                                                    <option value="{{ $course->id }}">{{ $course->full_name }}</option>
                                                 @endforeach
                                             </select>
                                         </td>

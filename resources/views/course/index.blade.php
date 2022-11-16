@@ -26,7 +26,7 @@
         <div class="col-lg-12">
             <div class="card m-b-30">
                 <div class="card-header">
-                    <h6>Student yaratish</h6>
+                    <h6>Kurs yaratish</h6>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
@@ -58,6 +58,15 @@
                                     </form>
                                 @endisset
                                 {{-- @if(!$studentEdit) --}}
+                                @if ($errors->any())
+                                    <div class="alert alert-danger">
+                                        <ul>
+                                            @foreach ($errors->all() as $error)
+                                                <li>{{ $error }}</li>
+                                            @endforeach
+                                        </ul>
+                                    </div>
+                                @endif
                                 <form action="{{ route('course.store') }}" method="post">
                                     @csrf
                                     @method('POST')
@@ -107,6 +116,7 @@
                                     <td class="seconds">{{ $course->description }}</td>
                                     <td  class="d-flex align-center justify-content-around p-2">
                                         <a href="{{ route('course.edit',$course->id) }}" class="m-2 p-3"><i class="bi bi-pencil btn-success w-100 p-2" style='border-radius:5px'>Edit</i></a>
+                                        <a href="{{ route('course.show',$course->id) }}" class="m-2 p-3"><i class="bi bi-pencil btn-primary w-100 p-2" style='border-radius:5px'>Show</i></a>
                                         <form action="{{ route('course.destroy',$course->id) }}" method="post" class="d-flex align-center ">
                                             @csrf
                                             @method('delete')
